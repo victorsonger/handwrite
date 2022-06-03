@@ -16,6 +16,11 @@ function typeJudgeUniversal(obj) {
     : typeof obj;
 }
 
-console.log("typeJudegeUniversal Date", typeJudgeUniversal(new Date()));
-console.log("typeJudegeUniversal Array", typeJudgeUniversal([]));
-console.log("typeJudegeUniversal String", typeJudgeUniversal(new String('22')));
+export {
+  typeJudgeUniversal as type
+}
+
+// console.log("typeJudegeUniversal Date", typeJudgeUniversal(new Date()));
+// console.log("typeJudegeUniversal Array", typeJudgeUniversal([]));
+// console.log("typeJudegeUniversal String", typeJudgeUniversal(new String('22')));
+// console.log("typeJudegeUniversal Function", typeJudgeUniversal(() => {}));
